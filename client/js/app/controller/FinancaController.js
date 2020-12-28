@@ -40,6 +40,7 @@ export class FinancaController {
     }
 
     adiciona(evento) {
+        console.log(evento)
         evento.preventDefault()
         this._listaFinancas.adiciona(this._criaFinanca())
         this._financasView.update(this._listaFinancas)
@@ -109,7 +110,7 @@ export class FinancaController {
     
         if (this._inputFiltroData.value === "") {
         
-            this._notificacao.texto = "Preencha um data!"
+            this._notificacao.texto = "Preencha uma data!"
             this._notificacaoView.update(this._notificacao, "danger")
 
         } else {

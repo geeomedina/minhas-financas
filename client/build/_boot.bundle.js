@@ -153,6 +153,7 @@ var FinancaController = /*#__PURE__*/function () {
   _createClass(FinancaController, [{
     key: "adiciona",
     value: function adiciona(evento) {
+      console.log(evento);
       evento.preventDefault();
 
       this._listaFinancas.adiciona(this._criaFinanca());

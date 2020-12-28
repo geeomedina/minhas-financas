@@ -22,7 +22,6 @@ export class ListaFinancas {
     filtra(filtraData) {
     
         return this._financas.filter(
-        
             financa => financa._data.setHours(0,0,0,0).valueOf() === filtraData.valueOf()
         )
     }
