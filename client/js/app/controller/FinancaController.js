@@ -13,6 +13,7 @@ export class FinancaController {
         this._inputData = $("#data")
         this._inputQuantidade = $("#quantidade")
         this._inputValor = $("#valor")
+        this._inputFiltro = $("#filtro")
 
         this._listaFinancas = new ListaFinancas()
         this._financasView = new FinancasView($("#financasView"), this)
@@ -35,6 +36,7 @@ export class FinancaController {
     }
 
     adiciona(evento) {
+        console.log(evento)
         evento.preventDefault()
         this._listaFinancas.adiciona(this._criaFinanca())
         this._financasView.update(this._listaFinancas)
@@ -97,6 +99,20 @@ export class FinancaController {
 
         this._ordemColuna = coluna
 
+        this._financasView.update(this._listaFinancas)
+    }
+
+    filtra() {
+        if(this._inputFiltro.value === "") {
+            this._financasView.update(this._listaFinancas)
+        } else {
+            var listaFiltrada = new ListaFinancas()
+            listaFiltrada._financas = this._listaFinancas.filtra(DateHelper.textoParaData(this._inputFiltro.value))
+            this._financasView.update(listaFiltrada)
+        }
+    }
+
+    limpa() {
         this._financasView.update(this._listaFinancas)
     }
 
