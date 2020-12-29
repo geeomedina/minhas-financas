@@ -1,40 +1,76 @@
-# FIAP Bootstrap - Template Product
-<p align="left">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Relirk/fiap-bootstrap-sample-product">
+# Minhas Finanças
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Relirk/fiap-bootstrap-sample-product">
-  
-  <a href="https://github.com/Relirk/fiap-bootstrap-sample-product/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Relirk/fiap-bootstrap-sample-product">
-  </a>
+Object Oriented and Design Patterned JavaScript ES2015+ "Minhas Finanças" Project. 
 
-  <a href="https://github.com/Relirk/fiap-bootstrap-sample-product/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/Relirk/fiap-bootstrap-sample-product">
-  </a>
+It uses an Node.js API built with Express.js, also published on Heroku App hosting.
 
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-</p>
+## Open Source Project
 
-Este repositório contém um template Bootstrap de Produto editado com alguns textos e imagens referentes ao Startup One.
+https://github.com/danvitoriano/minhas-financas/projects/1
 
-# Produto
-### Solução: mobilidade urbana para motociclistas
+## Issues
 
-HUD interativo de capacete, app de configuração, integração com Alexa. 
+https://github.com/danvitoriano/minhas-financas/issues
 
-# História
+## Wiki
 
-Analisando algumas das necessidades atuais dos motociclistas, temos refletido sobre tais afirmações:
-- O motociclista tem dificuldade para desviar o olhar para um device normalmente preso no guidão, pois tira frequentemente sua atenção da via;
-- Qual preso no guidão, não é possível ouvir os avisos sonoros;
-- Segurança de não ser assaltado ou deixar o dispositivo móvel cair na via;
-- Preço mais acessível.
- 
+https://github.com/danvitoriano/minhas-financas/wiki
 
+## Install
 
-Equipe: 
-- Francisco Olvera 	- RM 338050
-- Felipe Oliveira 	- RM 338405
-- Geovane Medina    - RM 338045
-- Marcello Chuahy   - RM 337780
+```
+cd server
+npm i
+```
 
+## Run Server
+
+```
+cd server
+npm run start
+```
+
+**Client:**
+
+[localhost:3000](http://localhost:3000)
+
+Files at `/server` folder. 
+
+It uses Express.JS as server side framework.
+
+**API:**
+
+GET: /financas/semana[localhost:3000/financas/semana](http://localhost:3000/financas/semana)
+
+GET: /financas/anterior [localhost:3000/financas/anterior](http://localhost:3000/financas/anterior)
+
+GET: /financas/retrasada [localhost:3000/financas/retrasada](http://localhost:3000/financas/retrasada)
+
+POST: /financas [localhost:3000/financas](http://localhost:3000/financas)
+
+**API on Heroku:**
+
+If you prefer use an online version, replace the endpoints for these:
+
+GET: /financas/semana
+
+[https://evening-badlands-20922.herokuapp.com/financas/semana](http://https://evening-badlands-20922.herokuapp.com/financas/semana)
+
+GET: /financas/anterior
+
+[https://evening-badlands-20922.herokuapp.com/financas/anterior](http://https://evening-badlands-20922.herokuapp.com/financas/anterior)
+
+GET: /financas/retrasada
+
+[https://evening-badlands-20922.herokuapp.com/financas/retrasada](http://https://evening-badlands-20922.herokuapp.com/financas/retrasada)
+
+POST: /minhas-financas 
+
+[https://evening-badlands-20922.herokuapp.com/financas](http://https://evening-badlands-20922.herokuapp.com/financas)
+
+## Build
+
+```
+cd server
+npm run build
+```
